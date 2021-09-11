@@ -1,0 +1,37 @@
+.works__container {
+  margin-top: 48px;
+}
+
+.works {
+  margin-top: 32px;
+}
+
+.works__tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .works__tag {
+    font-size: $font-sm;
+    color: $c-tag;
+    padding: 8px 12px;
+    margin: 4px 6px;
+    border-radius: 4px;
+
+    &.active {
+      color: $c-text;
+      background-color: $c-tag-bg;
+      font-weight: 500;
+    }
+  }
+}
+
+.works__placeholder {
+  color: $c-tag;
+  text-align: center;
+  margin-top: 80px;
+  font-size: $font-sm;
+
+  @include media('<=phone') {
+    margin-top: 48px;
+  }
+}

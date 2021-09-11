@@ -1,0 +1,14 @@
+.contact__container {
+  margin-top: 64px;
+}
+
+.contact__content {
+  font-size: $font-sm;
+  text-align: center;
+
+  a {
+    text-decoration: underline;
+    font-weight: 500;
+    color: $c-primary;
+  }
+}

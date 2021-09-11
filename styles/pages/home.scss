@@ -1,0 +1,12 @@
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  background-color: #FAF1E6;
+}
+
+.header-bar__text {
+  font-size: $font-sm;
+  color: #6F4C5B;
+}

@@ -1,0 +1,19 @@
+.post-header {
+  margin-top: 48px;
+
+  @include media('<=phone') {
+    margin-top: 16px;
+  }
+}
+
+.post-header__cover {
+  margin-top: 16px;
+  img {
+    border-radius: 6px;
+  }
+}
+
+.post-header__title {
+  margin-top: 16px;
+  font-weight: 600;
+}

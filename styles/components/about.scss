@@ -1,0 +1,57 @@
+.about__container {
+  padding-top: 160px;
+  @include media('<=phone') {
+    padding-top: 128px;
+  }
+}
+
+.about__title {
+  font-size: $font-lg;
+  font-weight: 700;
+  text-align: center;
+  font-family: $font-mt;
+  line-height: 1;
+}
+
+.about__profile {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  &--l, img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #FAFAFA;
+  }
+  &--r {
+    margin-left: 24px;
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .about__profile--social {
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+      a {
+        margin-right: 16px;
+        display: flex;
+      }
+    }
+  }
+}
+
+.about__bio {
+  font-size: $font-sm;
+  margin-top: 24px;
+}
+
+.desktop-only {
+  .about__profile {
+    align-items: unset;
+    img {
+      width: 104px;
+      height: 104px;
+    }
+  }
+}

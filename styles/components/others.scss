@@ -1,0 +1,69 @@
+.others__container {
+  padding-top: 160px;
+  @include media('<=phone') {
+    padding-top: 128px;
+  }
+}
+
+.others__title {
+  font-size: $font-lg;
+  font-weight: 700;
+  text-align: center;
+  font-family: $font-mt;
+  line-height: 1;
+}
+
+.others__subtitle {
+  font-size: $font-sm;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.others__links {
+  margin-top: 48px;
+  display: grid;
+  column-gap: 24px;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+
+  img {
+    border-radius: 6px 6px 0 0;
+  }
+
+  @include media('<=phone') {
+    grid-template-columns: repeat(1,minmax(0,1fr));
+    img {
+      height: 120px;
+    }
+    .others__link:last-child {
+      margin-top: 24px;
+    }
+  }
+}
+
+.others__link__image {
+  border-radius: 6px 6px 0 0;
+}
+
+.others__link {
+  display: block;
+  cursor: pointer;
+}
+
+.others__link__wrapper {
+  border-radius: 6px;
+  border: 1px solid $c-border;
+}
+
+.others__link__inner {
+  padding: 16px 24px;
+  h1 {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: $font-mt;
+  }
+  p {
+    margin-top: 2px;
+    font-size: $font-sm;
+    color: $c-tag;
+  }
+}

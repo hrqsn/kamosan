@@ -1,0 +1,7 @@
+.post-body {
+  margin-top: 48px;
+
+  @include media('<=phone') {
+    margin-top: 32px;
+  }
+}

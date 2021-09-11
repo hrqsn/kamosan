@@ -1,0 +1,140 @@
+@import '../utils/variables';
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.6;
+  touch-action: manipulation;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: $c-text;
+  background: $c-white;
+  word-break: break-word;
+  word-wrap: break-word;
+  font-family: $font-sans;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.loading {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+p,
+blockquote,
+dl,
+dd,
+dt,
+section {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.25s;
+  color: inherit;
+  display: inline-block;
+  &.active {
+    font-weight: 600;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+hr {
+  border: none;
+}
+
+button, .button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background: transparent;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  transition: 0.1s ease;
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.sm-only {
+  display: none;
+  @include media('<=phone') {
+    display: block !important;
+  }
+}
+
+.desktop-only {
+  display: none;
+  @include media('>phone') {
+    display: block !important;
+  }
+}
+
+.hover-image {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  &:hover img {
+    transform: scale(1.036);
+    transition: all .24s cubic-bezier(.4,0,.25,1);
+  }
+}
+
+.hover-image img {
+  position: relative;
+  transform: scale(1);
+  transition: all .24s cubic-bezier(.4,0,.25,1);
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}

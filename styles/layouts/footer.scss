@@ -1,0 +1,18 @@
+.footer__container {
+  background: $c-white;
+  margin-top: 64px;
+  z-index: z('navigation');
+}
+
+.footer__inner {
+  padding: 48px 40px 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__copyright {
+  margin-top: 40px;
+  font-size: $font-sm;
+  font-family: $font-mt;
+  text-align: center;
+}

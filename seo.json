@@ -1,0 +1,24 @@
+{
+  "title": "三ツ鳥かも",
+  "titleTemplate": "%s - 三ツ鳥かも",
+  "description": "三ツ鳥かものサイトへようこそ！今までの作品やプロフィールをまとめています。",
+  "openGraph": {
+    "title": "三ツ鳥かも",
+    "description": "三ツ鳥かものサイトへようこそ！今までの作品やプロフィールをまとめています。",
+    "type": "website",
+    "locale": "ja_JP",
+    "url": "https://kamosan.jp/",
+    "site_name": "三ツ鳥かも",
+    "images": [
+      {
+        "url": "https://kamosan.jp/img/card.png",
+        "width": 800,
+        "height": 400,
+        "alt": "三ツ鳥かも"
+      }
+    ]
+  },
+  "twitter": {
+    "cardType": "summary_large_image"
+  }
+}
